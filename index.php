@@ -10,7 +10,7 @@ $website="https://api.telegram.org/";
 $text=$update['message']['text'];
 $chatid=$update['message']['from']['id'];
 $agg=json_encode($update, JSON_PRETTY_PRINT);
-function sendMessage($chatId, $text) {
+function sendMessage($chatid, $text) {
   $api='bot542609682:AAEefoEGUUriQtztOG-Yf5LSetKv1EmpxyQ';
   $url=$GLOBALS[$website].$api."/sendMessage?chatid=$chatid&$text=".urlencode($text); 
   $get = file_get_contents($url);

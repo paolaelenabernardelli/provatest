@@ -81,7 +81,7 @@ cb_reply($cbid, "NOTIFICA TIPO 1", false, $cbmid, "Messaggio Modificato");
 
 //foto
 
-if($msg == "/foto")
+if($msg == "/ricerca")
 {
 si($chatID, "foto.jpg", false, "questa è la didascalia");
 }
